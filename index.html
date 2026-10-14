@@ -1,47 +1,94 @@
-<html>
-    <head>
-        <title>Home</title>
-        <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-</script>
-<link rel="stylesheet" href="PortfolioStyle.css">
-    </head>
-    <body style="background-image: url('homepage3.jpeg');">
-      <div id="home">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="skills.html">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Contact</a>
-                  </li>
-                  </ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keith Mendez | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="PortfolioStyle.css" />
+  </head>
+  <body style="background-image: url('homepage3.jpeg');">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Keith <span>Mendez</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-shell">
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 hero-copy">
+              <span class="eyebrow">IT Student • Aspiring Developer</span>
+              <h1>Hi, I'm <span>Keith</span></h1>
+              <p>
+                I build clean, functional digital experiences with a strong focus on front-end development,
+                problem solving, and learning technologies that make everyday user experiences better.
+              </p>
+              <div class="hero-actions">
+                <a href="about.html" class="btn-portfolio btn-primary">About Me</a>
+                <a href="Contact.html" class="btn-portfolio btn-secondary">Hire Me</a>
               </div>
-          </nav>
-           <div class="heading text-center">
-<h5>Hi! My Name Is</h5>
-<h1>Keith Mendez</h1>
-<p>Welcome to My Portfolio</p>
-           </div>
+              <ul class="quick-stats">
+                <li><strong>4+</strong><span>Years Learning</span></li>
+                <li><strong>6+</strong><span>Skills Built</span></li>
+                <li><strong>100%</strong><span>Creative Drive</span></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-5 hero-visual">
+              <div class="profile-frame" aria-label="Coding terminal portfolio preview">
+                <div class="interactive-panel terminal-window">
+                  <div class="terminal-header">
+                    <div class="terminal-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">portfolio.sh</span>
+                  </div>
+
+                  <div class="terminal-body">
+                    <div class="terminal-line"><span class="prompt">$</span> whoami</div>
+                    <div class="terminal-line output">keith_mendez</div>
+
+                    <div class="terminal-line"><span class="prompt">$</span> skills</div>
+                    <div class="terminal-list">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JS</span>
+                      <span>DB</span>
+                    </div>
+
+                    <div class="terminal-line"><span class="prompt">$</span> status</div>
+                    <div class="terminal-line output status-line"><span class="success-dot"></span> available_for_work</div>
+
+                    <div class="terminal-line"><span class="prompt">$</span> focus</div>
+                    <div class="terminal-line output">frontend / UX / IT</div>
+
+                    <div class="terminal-cursor"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-         
-
-    </body>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
+

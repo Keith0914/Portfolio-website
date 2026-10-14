@@ -1,63 +1,83 @@
-<html>
-    <head>
-        <title>About Me</title>
-                <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-</script>
-<link rel="stylesheet" href="PortfolioStyle.css">
-    </head>
-    <body style="background-image: url('pic4.webp'); color: white;">
-        <div id="home">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav mx-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About Me</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="skills.html">Skills</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                      </li>
-                      </ul>
-                  </div>
-              </nav>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Keith Mendez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="PortfolioStyle.css" />
+  </head>
+  <body style="background-image: url('pic4.webp');">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Keith <span>Mendez</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-shell section-wrap">
+      <div class="container">
+        <div class="section-title">
+          <h2>Who Am I?</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="pic3.jpg" alt="Keith Mendez profile" />
+          </div>
+
+          <div class="about-card">
+            <h3>About Me</h3>
+            <p>
+              Hi, I’m Keith Mendez — an IT student currently pursuing a Bachelor of Science in Information Technology at the Philippine Institute.
+I have hands-on experience in hardware and software troubleshooting, network administration, and technical support.
+            </p>
+            <p>
+              I’ve set up host-client network systems, built and deployed web projects, and developed applications ranging from a Library Management System to a Gym App — all while juggling freelance work and my studies.
+On the web side, I work with HTML, CSS, JavaScript, WordPress, and GitHub. I’m also comfortable working with databases, managing Excel records, and creating visual content through Canva.
+            </p>
+
+            <div class="tag-list">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Networking</span>
+              <span class="tag">Database Management</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Canva</span>
+              <span class="tag">Excel</span>
+              <span class="tag">IT Student</span>
             </div>
-            <div id="about" class=" container-fluid mt-3 pb-5 ">
-                <div class="post-heading text-center">
-                  <h3 class="display-4 font-weight-bold" style="margin-top: 7%;">Who Am I?</h3>
-                  <hr class="w-50 mx-auto pb-5">
-                </div>
-                <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <img src="pic3.jpeg" class="img-fluid" style="height: 15cm; margin-left: 45px;">
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                <h2 class="text-center">About Me</h2>
-                <hr class="w-50 mx-auto ">
-                <p>
-                     I am a student of the IT (Information Technology) 
-                    course. I have learned to program and create basic websites using html and css. I 
-                also have a bit of knowledge when it comes to javascript. I have also experienced creating
-            a database, one that keeps data on the clients who are subscribed to a gym. I have started
-        studying in IT 1 year ago in my first year in my humble college name Lourdes College. And now I am currently
-    studying at Philippine Institute for half a year in order to learn more about programming and all there is to it when
-it comes to computers.</p>
-<button class="btn w-50">
-  <a href="CV.html">My CV</a>
-</button>
-                </div>
-    </body>
+
+            <div class="info-grid compact-grid">
+              <div class="info-box">
+                <strong>4+</strong>
+                <span>Years learning</span>
+              </div>
+              <div class="info-box">
+                <strong>100%</strong>
+                <span>Curiosity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
+
