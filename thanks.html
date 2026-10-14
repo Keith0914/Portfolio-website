@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="PortfolioStyle.css" />
   </head>
   <body style="background-image: url('homepage3.jpeg');">
-    <div class="thanks-wrap">
-      <div class="thanks-card">
-        <h1>Thank You!</h1>
-        <p>
-          Your message has been successfully sent. I appreciate your interest and will get back to you as soon as possible.
-        </p>
-        <a href="index.html" class="btn-portfolio btn-primary">Back to Home</a>
+    <main class="thanks-wrap">
+      <div class="alert alert-success mb-0" role="status">
+        Your email has been sent. Returning to the home page...
       </div>
-    </div>
+    </main>
+    <script>
+      window.setTimeout(() => {
+        window.location.replace("index.html");
+      }, 1800);
+    </script>
   </body>
 </html>
