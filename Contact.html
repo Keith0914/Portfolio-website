@@ -35,7 +35,7 @@
 
         <div class="contact-grid">
           <div class="form-card">
-            <form action="https://formsubmit.co/keithzeejaymendez72@gmail.com" method="POST">
+            <form id="contact-form" action="https://formsubmit.co/keithzeejaymendez72@gmail.com" method="POST">
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_subject" value="You've got mail!" />
               <input type="hidden" name="_next" value="thanks.html" />
@@ -90,6 +90,27 @@
         </div>
       </div>
     </main>
+    <script>
+      const contactForm = document.getElementById("contact-form");
+      const emailField = document.getElementById("email");
+      const messageField = document.getElementById("message");
+
+      [emailField, messageField].forEach((field) => {
+        field.addEventListener("input", () => field.setCustomValidity(""));
+      });
+
+      contactForm.addEventListener("submit", (event) => {
+        const emailIsEmpty = !emailField.value.trim();
+        const messageIsEmpty = !messageField.value.trim();
+
+        emailField.setCustomValidity(emailIsEmpty ? "Please enter your email address." : "");
+        messageField.setCustomValidity(messageIsEmpty ? "Please enter your message." : "");
+
+        if (emailIsEmpty || messageIsEmpty) {
+          event.preventDefault();
+          contactForm.reportValidity();
+        }
+      });
+    </script>
   </body>
 </html>
-
