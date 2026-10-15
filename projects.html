@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Keith Mendez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="PortfolioStyle.css" />
+  </head>
+  <body style="background-image: url('pic4.webp');">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Keith <span>Mendez</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page-shell section-wrap">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <div class="divider"></div>
+          <p>A selection of projects I’ve built while learning, experimenting, and bringing ideas to life.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-preview">
+              <img class="project-image" src="projects1.jpg" alt="Library interior for the Library Management System project" />
+              <span class="project-placeholder" aria-hidden="true">Libralink</span>
+            </div>
+            <div class="project-content">
+              <span class="project-type">Management System</span>
+              <h3>Library Management System</h3>
+              <p>A practical system project focused on organizing library records and making everyday management tasks easier.</p>
+              <div class="tag-list">
+                <span class="tag">Web Project</span>
+                <span class="tag">Database</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview">
+              <img class="project-image" src="projects2.jpg" alt="Gym App project preview" />
+              <span class="project-placeholder" aria-hidden="true">Gym<br />Bro</span>
+            </div>
+            <div class="project-content">
+              <span class="project-type">Application</span>
+              <h3>Gym App</h3>
+              <p>An app project created as part of my hands-on experience building useful, user-focused digital tools 
+                to help track fitness goals.</p>
+              <div class="tag-list">
+                <span class="tag">App Development</span>
+                <span class="tag">UI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview">
+              <img class="project-image" src="projects3.jpg" alt="Nursery Attendance App project preview" />
+              <span class="project-placeholder" aria-hidden="true">Nursery<br />For Us</span>
+            </div>
+            <div class="project-content">
+              <span class="project-type">Application</span>
+              <h3>Kindergarden Activity Tracker</h3>
+              <p>A simple app that keeps track of the kids' activities throughout the week.</p>
+              <div class="tag-list">
+                <span class="tag">Task Tracking</span>
+                <span class="tag">Kids</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.querySelectorAll(".project-image").forEach((image) => {
+        const revealImage = () => {
+          if (image.naturalWidth > 0) {
+            image.parentElement.classList.add("has-image");
+          }
+        };
+
+        image.addEventListener("load", revealImage);
+        revealImage();
+      });
+    </script>
+  </body>
+</html>
