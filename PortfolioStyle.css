@@ -802,6 +802,10 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .info-grid {
     grid-template-columns: 1fr;
   }
@@ -818,6 +822,10 @@ textarea.form-control {
 
   .section-wrap {
     padding-top: 60px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-copy p {
